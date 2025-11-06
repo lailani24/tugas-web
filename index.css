@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  background-color: rgb(94, 137, 176);
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 10px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo:hover {
+  color: yellow;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: yellow;
+}
+.judul {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(gambar/ad4f1f63487929774d718eec9635fefe.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  background-repeat: no-repeat;
+}
+.judul-section {
+  color: white;
+}
+.judul-section h2 {
+  font-size: 56px;
+}
+.judul-section p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.hero-section {
+  background-color: rgb(239, 242, 245);
+  border-radius: 20px;
+  margin: 10px;
+}
+.hero-section .destinasi h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+.destinasi-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+.destinasi-list .destinasi-items img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px 10px 0 0;
+}
+.destinasi-items {
+  background-color: white;
+  border-radius: 10px ;
+  transition: transform 0.3s ease;
+}
+.destinasi-items:hover{
+  transform: scale(1.1);
+}
+.destinasi-items .text {
+  padding: 10px;
+}
