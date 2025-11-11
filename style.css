@@ -9,7 +9,6 @@ h2 {
 /* navigasi */
 .container {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -124,4 +123,20 @@ nav ul li a:hover {
 }
 .destinasi-items .text {
   padding: 10px;
+}
+.tombol{
+  text-align: center;
+}
+button{
+  background-color: rgb(94, 137, 176);
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: yellow;
+  color: rgb(94, 137, 176);
 }
