@@ -9,12 +9,11 @@ h2 {
 /* navigasi */
 .container {
   width: 90%;
-  margin: 0 auto;
   padding: 0 15px;
 }
 header {
   background-color: rgb(94, 137, 176);
-  padding: 15px 0;
+  padding: 5px;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
   border-radius: 20px;
   margin: 10px;
@@ -27,18 +26,18 @@ header .container {
 .logo:hover {
   color: yellow;
 }
-nav ul {
+.container nav ul {
   display: flex;
   list-style: none;
 }
-nav ul li {
+.container nav ul li {
   margin-left: 20px;
 }
-nav ul li a {
+.container nav ul li a {
   color: black;
   text-decoration: none;
 }
-nav ul li a:hover {
+.container nav ul li a:hover {
   color: yellow;
 }
 
@@ -73,11 +72,11 @@ nav ul li a:hover {
   font-size: 20px;
   padding: 10px;
 }
-.pengantar{
+.pengantar {
   margin-top: 20px;
 }
 .pengantar article {
-  text-align:justify;
+  text-align: justify;
   margin: 15px;
   padding: 10px;
   line-height: 1.6;
@@ -108,6 +107,7 @@ nav ul li a:hover {
 }
 .destinasi-items {
   background-color: white;
+  max-width: 350px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -117,10 +117,10 @@ nav ul li a:hover {
 .destinasi-items .text {
   padding: 10px;
 }
-.tombol{
+.tombol {
   text-align: center;
 }
-button{
+button {
   background-color: rgb(94, 137, 176);
   color: white;
   border: none;
@@ -129,7 +129,51 @@ button{
   border-radius: 20px;
   cursor: pointer;
 }
-button:hover{
+button:hover {
   background-color: yellow;
   color: rgb(94, 137, 176);
+}
+
+/* footer */
+footer {
+  background-color: rgb(94, 137, 176);
+  font-size: 18px;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.footer .tentang-kami {
+  text-align: justify;
+  width: 33%;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer .tautan-cepat ul {
+  list-style: none;
+}
+footer .tautan-cepat ul li a {
+  text-decoration: none;
+  color: black;
+  line-height: 1.6;
+  margin-left: 9px;
+}
+footer .tautan-cepat ul li a:hover {
+  color: yellow;
+}
+footer .kontak-list a {
+  text-decoration: none;
+  color: black;
+}
+footer .kontak-list a:hover {
+  color: yellow;
+}
+ .container{
+  text-align: center;
+  margin: 20px;
 }
