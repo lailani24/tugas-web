@@ -39,3 +39,6 @@
 .info ul{
   padding-left: 10px;
 }
+.clear{
+  clear: both;
+}
