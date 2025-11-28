@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 .destinasi {
   background-image: url(gambar/konservasi\ penyu\ ampiang\ parak.jpg);
@@ -18,13 +18,13 @@
   margin: auto;
   padding: 20px;
 }
-.destinasi-list h2{
+.destinasi-list h2 {
   text-align: center;
   font-size: 28px;
   padding-bottom: 20px;
 }
-.destinasi-name{
-    padding: 20px;
+.destinasi-name {
+  padding: 20px;
 }
 .destinasi-name img {
   float: left;
@@ -33,12 +33,18 @@
   margin-right: 20px;
   object-fit: cover;
 }
-.destinasi-items{
+.destinasi-items {
   padding-left: 15px;
 }
-.info ul{
+.info ul {
   padding-left: 10px;
 }
-.clear{
+.clear {
   clear: both;
+}
+.destinasi-baru video {
+  width: 374px;
+  height: 300px;
+  float: left;
+  margin: 0px 20px;
 }

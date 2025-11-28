@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container h1{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.kuliner h3{
+    margin: 20px;
+}
+.kuliner-items img{
+    width: 300px;
+    height:300px;
+    float: left;
+    margin: 0px 20px;
+}
