@@ -12,8 +12,11 @@
     margin: 20px;
 }
 .kuliner-items img{
-    width: 300px;
-    height:300px;
+    width: 500px;
+    height:400px;
     float: left;
     margin: 0px 20px;
+}
+.clear{
+    clear: both;
 }
