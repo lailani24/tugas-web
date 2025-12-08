@@ -5,7 +5,8 @@
   font-family: "poppins", sans-serif;
 }
 .destinasi {
-  background-image: url(gambar/konservasi\ penyu\ ampiang\ parak.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(gambar/konservasi\ penyu\ ampiang\ parak.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
