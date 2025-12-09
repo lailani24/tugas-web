@@ -131,13 +131,23 @@ header .container {
   margin: 0 auto;
   text-align: center;
 }
-.tombol a {
-  text-decoration: none;
+
+/* Hilangkan style bawaan button */
+.tombol button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
   color: black;
 }
-.tombol :hover {
+
+/* Hover */
+.tombol button:hover {
   color: yellow;
 }
+
 
 /* footer */
 footer {
