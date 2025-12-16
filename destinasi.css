@@ -49,3 +49,47 @@
   float: left;
   margin: 0px 20px;
 }
+
+/* ===================== */
+/* RESPONSIVE MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+  .destinasi .destinasi-list {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .destinasi-name img,
+  .destinasi-baru video {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .destinasi-name {
+    padding: 10px;
+  }
+
+  .destinasi-items {
+    padding-left: 0;
+  }
+
+  .info ul {
+    padding-left: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

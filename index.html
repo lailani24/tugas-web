@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <!-- navigasi -->
     <header>
       <div class="container">
         <h1 class="logo">Alam MinangKabau</h1>
+
+        <div class="menu-toggle" id="menu-toggle"></div>
 
         <nav>
           <ul>
@@ -253,22 +256,28 @@
           </nav>
         </div>
 
-        <div class="kontak-list">
-          <h2>Kontak Kami</h2>
-          <p>
-            <a href="mailto:lailani489@gmail.com" target="_blank"
-              >Lailani489@gmail.com</a
-            >
-            <br />
-            <a href="https://wa.me/628132063319" target="_blank">WhatsApp </a>
-            <br />
-            <a
-              href="https://www.instagram.com/lailani_tayra?igsh=MXNqODE0NWRodG45cA=="
-              target="_blank"
-              >Instagram
-            </a>
-          </p>
-        </div>
+<div class="kontak-list">
+  <h2>Kontak Kami</h2>
+
+  <!-- info kontak -->
+  <p>
+    <a href="mailto:lailani489@gmail.com">Lailani489@gmail.com</a><br />
+    <a href="https://wa.me/628132063319" target="_blank">WhatsApp</a><br />
+    <a
+      href="https://www.instagram.com/lailani_tayra?igsh=MXNqODE0NWRodG45cA=="
+      target="_blank"
+      >Instagram</a
+    >
+  </p>
+
+  <!-- form kontak -->
+<form class="form-kontak" id="formKontak">
+  <input type="text" id="nama" placeholder="Nama" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <textarea id="pesan" placeholder="Pesan" rows="4" required></textarea>
+  <button type="submit">Kirim</button>
+</form>
+
       </div>
     </footer>
 
@@ -276,4 +285,33 @@
       <small>&copy; 2025 Alam Minang kabau. All rights reserved.</small>
     </div>
   </body>
+
+  <script>
+
+    document.getElementById("formKontak").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var pesan = document.getElementById("pesan").value;
+
+    var nomorWA = "628132063319"; // GANTI NOMOR INI
+
+    var text = 
+      "Halo saya " + nama + 
+      "\nEmail: " + email + 
+      "\nPesan: " + pesan;
+
+    var url = "https://wa.me/628132063319" + nomorWA + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+  });
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
 </html>
