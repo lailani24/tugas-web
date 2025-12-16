@@ -288,24 +288,25 @@
 
   <script>
 
-    document.getElementById("formKontak").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.getElementById("formKontak").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-    var nama = document.getElementById("nama").value;
-    var email = document.getElementById("email").value;
-    var pesan = document.getElementById("pesan").value;
+  const nama = document.getElementById("nama").value;
+  const email = document.getElementById("email").value;
+  const pesan = document.getElementById("pesan").value;
 
-    var nomorWA = "628132063319"; // GANTI NOMOR INI
+  const nomorWA = "6281234567890"; // ganti nomor kamu
 
-    var text = 
-      "Halo saya " + nama + 
-      "\nEmail: " + email + 
-      "\nPesan: " + pesan;
+  const teks =
+    `Halo, saya ${nama}\n` +
+    `Email: ${email}\n` +
+    `Pesan: ${pesan}`;
 
-    var url = "https://wa.me/628132063319" + nomorWA + "?text=" + encodeURIComponent(text);
+  const linkWA =
+    "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(teks);
 
-    window.open(url, "_blank");
-  });
+  window.location.href = linkWA;
+});
   const menuToggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
 
