@@ -303,7 +303,7 @@ document.getElementById("formKontak").addEventListener("submit", function(e) {
     `Pesan: ${pesan}`;
 
   const linkWA =
-    "https://wa.me/628132063319" + nomorWA + "?text=" + encodeURIComponent(teks);
+    "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(teks);
 
   window.location.href = linkWA;
 });
